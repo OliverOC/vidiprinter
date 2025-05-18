@@ -5,6 +5,8 @@ The application reads in a file containing a list of football in-game events.
 These events indicate that something significant occurred within a match; these events will be for many different matches. 
 The order of these events will be based on the time of day at which they occurred.
 
+The Vidiprinter will print these events to the console, with a configurable delay between events.
+
 ## Example Output
 
 PL Goal Wolves 2 Leeds 4 Rodrigo (90+7)
@@ -40,7 +42,7 @@ pnpm start
 Or, if you want to run directly with ts-node:
 
 ```
-pnpm ts-node src/index.ts
+pnpm dev
 ```
 
 ## How to Test
@@ -58,18 +60,3 @@ pnpm test
 - [Jest](https://jestjs.io/) (testing framework)
 - [ts-node](https://typestrong.org/ts-node/) (TypeScript execution environment)
 - [eslint](https://eslint.org/) (linter)
-
-## Available Commands
-
-The following commands are available via `pnpm`:
-
-| Command           | Description                                 |
-|-------------------|---------------------------------------------|
-| pnpm build        | Build the project using TypeScript           |
-| pnpm dev          | Run the app in development mode (ts-node)    |
-| pnpm start        | Run the built app from dist/index.js         |
-| pnpm test         | Run all tests with Jest                      |
-| pnpm test:watch   | Run tests in watch mode                      |
-| pnpm test:coverage| Run tests and generate coverage report       |
-
-You can find these scripts in the `package.json` file under the `scripts` section.
